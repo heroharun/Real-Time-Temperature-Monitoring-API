@@ -1,0 +1,22 @@
+# This is a generated file. Not intended for manual editing.
+version: "3.8"
+services:
+  real-time-temperature-monitoring-api:
+    build:
+      context: "/Users/harun/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API"
+      dockerfile: "Real-Time-Temperature-Monitoring-API/Dockerfile"
+      target: "base"
+    command: []
+    entrypoint:
+    - "dotnet"
+    - "/app/bin/Debug/net8.0/Real-Time-Temperature-Monitoring-API.dll"
+    environment:
+      ASPNETCORE_ENVIRONMENT: "Development"
+      DOTNET_USE_POLLING_FILE_WATCHER: "true"
+    image: "real-time-temperature-monitoring-api:dev"
+    ports: []
+    volumes:
+    - "/Users/harun/.nuget/packages:/home/app/.nuget/packages"
+    - "/Users/harun/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API:/app:rw"
+    - "/Users/harun/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API:/src:rw"
+    working_dir: "/app"

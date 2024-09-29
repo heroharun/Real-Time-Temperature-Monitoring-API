@@ -1,0 +1,28 @@
+﻿version: '3.8'
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: temperaturestore_mongodb
+    environment:
+      DATABASE_NAME: Temperature
+      BOOK_COLLECTION: Temperatures
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - api_network
+  
+  real-time-temperature-monitoring-api:
+    image: real-time-temperature-monitoring-api
+    ports:
+      - "8080:8081"
+    build:
+      context: .
+      dockerfile: Real-Time-Temperature-Monitoring-API/Dockerfile
+
+volumes:
+  mongodb_data:
+
+networks:
+  api_network:
