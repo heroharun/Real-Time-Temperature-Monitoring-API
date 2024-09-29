@@ -3,11 +3,6 @@ Real Time Temperature Monitoring API
 This API is used to city wise temperature monitoring in real time. 
 Mock test cases are also added to test project. The API is developed using .Net 8.0 and MongoDB. The API is dockerized and can be run using docker-compose.
 
-## Features
-- Real time temperature monitoring for multiple cities
-- City wise temperature monitoring
-- Average temperature monitoring
-- Extreme temperature monitoring
 
 ## API Endpoints
 - Get /api/temperature - Get temperature of all cities
