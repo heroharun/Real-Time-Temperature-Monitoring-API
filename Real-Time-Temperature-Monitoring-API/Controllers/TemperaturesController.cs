@@ -99,6 +99,10 @@ public class TemperaturesController : ControllerBase
             Timestamp = newTemperature.Timestamp,
             Value = newTemperature.Temperature
         };
+        if (!temperature.Valiadate())
+        {
+            return BadRequest();
+        }
         await _temperatureService.CreateAsync(temperature);
         return Ok();
     }

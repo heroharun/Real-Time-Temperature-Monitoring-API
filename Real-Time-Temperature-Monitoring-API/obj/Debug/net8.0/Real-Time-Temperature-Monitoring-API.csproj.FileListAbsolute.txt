@@ -122,3 +122,4 @@
 /Users/harun/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/bin/Debug/net8.0/xunit.assert.dll
 /Users/harun/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/bin/Debug/net8.0/xunit.core.dll
 /Users/harun/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/bin/Debug/net8.0/xunit.execution.dotnet.dll
+/Users/harun/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/Real-Time-Temperature-Monitoring-API/obj/Debug/net8.0/Real-Time-Temperature-Monitoring-API.sourcelink.json

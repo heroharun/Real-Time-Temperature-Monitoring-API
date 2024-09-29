@@ -34,6 +34,11 @@ public class TemperatureDto
             Temperature = Value
         };
     }
+
+    public bool Valiadate()
+    {
+        return !string.IsNullOrEmpty(City) && Timestamp != default;
+    }
 }
 
 // created DTO for temperature as input
